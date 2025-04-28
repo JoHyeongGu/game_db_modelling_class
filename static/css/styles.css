@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Centered container for content */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.classname {
+    font-size: 12px;
+    margin-bottom: -20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#titleName {
+    font-weight: bold;
+    color: #51b17c;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    width: 80%;
+    margin-bottom: 5px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #51b17c;
+    box-shadow: 0 0 5px rgba(2, 68, 30, 0.3);
+}
+
+button {
+    padding: 7px 15px;
+    margin: 15px 5px;
+    font-size: 0.7rem;
+    background-color: #51b17c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #347a54;
+}
+
+button.delete:hover {
+    background-color: #e73737;
+}
+
+/* Details container styling */
+#userDetails {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#userDetails p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.highlight {
+    background-color: rgb(196, 253, 162);
+}

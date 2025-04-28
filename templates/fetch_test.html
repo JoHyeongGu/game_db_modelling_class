@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Fetch Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='scripts/fetch_test.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='scripts/login.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="classname">
+            게임DB설계
+        </div>
+        <h1>
+            Hello, <span id="titleName">Guest</span>
+        </h1>
+
+        <input type="number" id="userId" placeholder="User ID를 입력하세요" />
+        <button title="미리 저장된 데이터를 불러옵니다. id) 1, 2" onclick="fetchUserData()">불러오기</button>
+
+        <div id="userDetails"></div>
+    </div>
+
+    <div class="container">
+        <h3>
+             로그인 요청
+        </h3>
+        <input type="text" id="username" name="username" placeholder="UserName을 입력하세요.">
+        <br>
+        <input type="password" id="password" name="password" placeholder="Password를 입력하세요.">
+        <br>
+        <button onclick="login()" title="로그인 요청을 보내고 페이지를 새로고침 합니다">login</button>
+        <button class="delete" onclick="logout()" title="로그인 세션을 삭제합니다">clear</button>
+
+    </div>
+    <script>
+        document.getElementById('userId').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                fetchUserData();
+            }
+        });
+
+        setTimeout(() => {
+            document.querySelector('h1').classList.add('highlight');
+            console.log("Changed Header to Yellow");
+        }, 1000);
+    </script>
+</body>
+
+</html>
